@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.addItem">
+
+    <EditText
+        android:id="@+id/entryName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:inputType="text"
+        android:hint="Name of the Item"
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/quantity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/entryName"
+        android:layout_margin="15dp"
+        android:inputType="number"
+        android:hint="Quantity of the Item"
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:inputType="text"
+        android:layout_below="@+id/quantity"
+        android:hint="ID"
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:inputType="number"
+        android:layout_below="@+id/id"
+        android:hint="price"
+        android:textAlignment="center" />
+
+    <ImageView
+        android:id="@+id/btnAddImage"
+        android:visibility="visible"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:hint="Add Image Of The Item"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/price"/>
+
+    <ImageView
+        android:id="@+id/btnAddImage1"
+        android:visibility="visible"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/add"
+        android:hint="Add Image Of The Item"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/price"/>
+
+    <Button
+        android:id="@+id/btnsave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/buttonColor"
+        android:layout_below="@+id/btnAddImage"
+        android:layout_margin="20dp"
+        android:text="save"/>
+
+</RelativeLayout>

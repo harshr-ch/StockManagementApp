@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.Inventory2">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:id="@+id/rlFavorites">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerItem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"/>
+
+    </RelativeLayout>
+
+    </FrameLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnAdd"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="16dp"
+        android:background="@color/buttonColor"
+        android:src="@drawable/add" />
+
+    <RelativeLayout
+        android:id="@+id/rlInventory"
+        android:layout_width="match_parent"
+        android:visibility="invisible"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imgEmpty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/empty_cart"
+            android:layout_centerInParent="true"/>
+
+        <TextView
+            android:layout_below="@+id/imgEmpty"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="20dp"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CLICK + TO ADD A ITEM"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

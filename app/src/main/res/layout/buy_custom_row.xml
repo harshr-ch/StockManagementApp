@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardItem"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    app:cardCornerRadius="6dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="6">
+
+        <ImageView
+            android:id="@+id/imgItem"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="8dp"
+            android:layout_weight="2"
+            android:background="@drawable/coffee"
+            android:scaleType="centerCrop" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="12dp"
+            android:layout_weight="2">
+
+
+            <TextView
+                android:id="@+id/txtItemName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="4dp"
+                android:text="Item Name"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/txtItemCost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtItemName"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="8dp"
+                android:padding="4dp"
+                android:text="Cost of"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="12dp"
+            android:layout_weight="2">
+
+            <Button
+                android:id="@+id/decrement"
+                style="@style/QuantityPickerButtonStyle"
+                android:layout_alignParentStart="true"
+                android:layout_centerInParent="true"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:text="-" />
+
+            <TextView
+                android:id="@+id/quantity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="15dp"
+                android:layout_toRightOf="@+id/decrement"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:text="0"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/increment"
+                style="@style/QuantityPickerButtonStyle"
+                android:layout_centerInParent="true"
+                android:layout_toRightOf="@+id/quantity"
+                android:text="+" />
+
+        </RelativeLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

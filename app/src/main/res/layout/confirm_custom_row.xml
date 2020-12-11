@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:fitsSystemWindows="true"
+        android:layout_height="40dp">
+
+        <TextView
+            android:id="@+id/txtItemName"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="5dp"
+            android:drawablePadding="10dp"
+            android:text="Name of Item"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/txtItemQuantity"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="5dp"
+            android:layout_toEndOf="@+id/txtItemName"
+            android:text="Quantity"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/txtItemCost"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="5dp"
+            android:layout_toEndOf="@+id/txtItemQuantity"
+            android:text="Cost"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

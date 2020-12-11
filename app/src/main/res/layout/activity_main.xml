@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:fitsSystemWindows="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/btnInventory"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/border"
+            android:src="@drawable/inventory" />
+
+        <TextView
+            android:id="@+id/txtinventory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnInventory"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="20dp"
+            android:text="INVENTORY"
+            android:textSize="23sp" />
+
+        <ImageView
+            android:id="@+id/btnBuy"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginTop="30dp"
+            android:layout_below="@+id/txtinventory"
+            android:background="@drawable/border"
+            android:src="@drawable/shopping"
+            android:text="Buy" />
+
+        <TextView
+            android:id="@+id/txtBuy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnBuy"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="20dp"
+            android:text="SHOPPING"
+            android:textSize="23sp" />
+
+        <ImageView
+            android:id="@+id/btnTransaction"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginTop="30dp"
+            android:layout_below="@+id/txtBuy"
+            android:background="@drawable/border"
+            android:src="@drawable/transaction"
+            android:text="Buy" />
+
+        <TextView
+            android:id="@+id/txthistory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="HISOTRY"
+            android:textSize="23sp"
+            android:layout_below="@id/btnTransaction"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "750199877784",
+    "firebase_url": "https://stockmanagementapp-8df63.firebaseio.com",
+    "project_id": "stockmanagementapp-8df63",
+    "storage_bucket": "stockmanagementapp-8df63.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:750199877784:android:a5773fadb44d4e863020ed",
+        "android_client_info": {
+          "package_name": "com.harshit.stockmanagementapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "750199877784-cdlpdr2489omh3l8s872oruvu23p3a6m.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.harshit.stockmanagementapp",
+            "certificate_hash": "20241552418505e5d648fbda08a799f603dde1a5"
+          }
+        },
+        {
+          "client_id": "750199877784-l27g8ifojelir7v0oc9ut9masmtjc2mo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA0KWTQzQ6hoepVl6x1ahILfHpYeTt1j7U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "750199877784-l27g8ifojelir7v0oc9ut9masmtjc2mo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
